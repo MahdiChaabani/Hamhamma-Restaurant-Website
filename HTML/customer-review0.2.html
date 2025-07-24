@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo_1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Messtyles.css">
+    <title>Avis</title>
+    <style>
+        footer {
+            background-color: #1a0e0ea9;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 400px;
+        }
+        footer .social {
+            border-radius: 50%;
+        }
+        footer .social-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .feedback-form-container {
+            margin: 50px auto;
+            width: 60%;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .feedback-form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .feedback-form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .feedback-form-container input,
+        .feedback-form-container select,
+        .feedback-form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+        .feedback-form-container button {
+            background-color: #ef6d16;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #feedbacks-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+        /* Styles pour la section des avis clients */
+        .customer-reviews {
+            margin: 30px auto;
+            width: 60%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .customer-reviews h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ef6d16;
+        }
+        .feedback-card {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .feedback-card .dish-name {
+            font-weight: bold;
+            color: #ef6d16;
+        }
+        .feedback-card .rating {
+            color: #FFD700;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .feedback-card .comment {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .container {
+            margin: 50px auto;
+            width: 60%;
+        }
+        .chef {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .chef img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .chef-info h2 {
+            margin: 0;
+            color: #ef6d16;
+        }
+        .stars {
+            color: #FFD700;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../images/logo_1.png" alt="logo" class="logo"> 
+            <div class="wavy">
+                <h3>
+                    <span class="span1" style="--i:1">h</span>
+                    <span class="span1" style="--i:2">a</span>
+                    <span class="span1" style="--i:3">m</span>
+                    <span class="span1" style="--i:4">h</span>
+                    <span class="span1" style="--i:5">a </span>
+                    <span class="span1" style="--i:6">m</span>
+                    <span class="span1" style="--i:7">a</span>
+                    <span class="span1" style="--i:11">.</span> 
+                    <span class="span1" style="--i:12">.</span>  
+                    <span class="span1" style="--i:13">.</span>  
+                </h3> 
+            </div>
+            <ul>
+                <li class="li"><a href="../index.html">Accueil</a></li>
+                <li class="li"><a href="./about.html">À propos</a></li>
+                <li class="li"><a href="../PHP/menu.php">Menu</a></li>
+                <li class="li"><a href="./contact_us_page.html">Contact</a></li>
+                <li class="li"><a href="./Reservation_hamhamma.html">Réservation</a></li>
+                <li class="li"><a href="#">Avis</a></li>
+                <li><a href="./Admin.html">Admin</a></li>
+            </ul>
+        </div>
+
+        <div class="ctr">
+            <div class="tab"><img class="img2" src="../images/1.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="../images/2.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="../images/3.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="../images/4.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="../images/5.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="../images/6.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="../images/7.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="../images/8.jpg" alt=""></div> 
+        </div>
+    </div>
+
+    <!-- Formulaire d'avis client -->
+    <div class="feedback-form-container">
+        <h2>Laissez un Avis</h2>
+        <form id="feedbackForm" method="post">
+            <label for="selected-item">Plat :</label>
+            <select id="selected-item" name="item_id" required>
+                <option value="">Chargement...</option>
+            </select>
+
+            <label for="rating">Note :</label>
+            <select id="rating" name="rating" required>
+                <option value="">Choisissez une note</option>
+                <option value="1">1 ★</option>
+                <option value="2">2 ★★</option>
+                <option value="3">3 ★★★</option>
+                <option value="4">4 ★★★★</option>
+                <option value="5">5 ★★★★★</option>
+            </select>
+
+            <label for="comnt">Commentaire :</label>
+            <textarea id="comnt" name="comnt" rows="4" placeholder="Votre avis ici..."></textarea>
+
+            <div style="text-align: center;">
+                <button type="submit">Envoyer</button>
+                <button type="reset" style="margin-left: 10px; background-color: #ccc; color: black;">Réinitialiser</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Section des avis clients -->
+    <div class="customer-reviews" id="feedbacks-section">
+        <h2>Avis de nos clients</h2>
+        <!-- Les avis seront ajoutés ici dynamiquement -->
+    </div>
+
+    <!-- Section des Chefs -->
+    <div class="container">
+        <h1>Reviews de Chefs</h1>
+
+        <div class="chef">
+            <img src="../images/g.jpg" alt="Chef 1">
+            <div class="chef-info">
+                <h2>Chef Ghaith Homrani</h2>
+                <p>Expert en cuisine française.</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+
+        <div class="chef">
+            <img src="../images/m.jpg" alt="Chef 2">
+            <div class="chef-info">
+                <h2>Chef Mahdi Chaabani</h2>
+                <p>Spécialiste en cuisine italienne.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+        </div>
+
+        <div class="chef">
+            <img src="../images/333.png" alt="Chef 3">
+            <div class="chef-info">
+                <h2>Chef Souhail Akermi</h2>
+                <p>Maître de la cuisine moyen-orientale.</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2BIS : Mahdi Chaabani | Ghaith Homrani | Souhail Akermi.</p>
+        <div class="social-icons">
+            <a href="#"><img class="social" src="../images/Facebook_Logo_2023.png" width="30px" height="30px" alt=""></a>
+            <a href="#"><img class="social" src="../images/twitterr.png" width="30px" height="30px" alt=""></a>
+            <a href="#"><img class="social" src="../images/instaaa.png" width="30px" height="30px" alt=""></a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadFeedbacks();
+        
+            document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+        
+                const formData = new FormData(this);
+        
+                fetch('../PHP/Insert_Avis0.2.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    // Log the raw response for debugging
+                    return res.text().then(text => {
+                        try {
+                            return JSON.parse(text);
+                        } catch (err) {
+                            console.error('Raw response:', text);
+                            throw new Error('Invalid JSON response');
+                        }
+                    });
+                })
+                .then(response => {
+                    if (response.status === 'success') {
+                        alert(response.message);
+                        loadFeedbacks(); // Refresh feedbacks
+                        this.reset();
+                    } else {
+                        alert('Erreur: ' + response.message);
+                    }
+                })
+                .catch(err => {
+                    console.error('Erreur lors de l\'envoi du formulaire:', err);
+                    alert('Erreur lors de l\'envoi du formulaire: ' + err.message);
+                });
+            });
+        });
+        
+        function loadFeedbacks() {
+            console.log('Starting loadFeedbacks()');
+            
+            fetch('../PHP/Get_Feedbacks.php')
+                .then(res => {
+                    console.log('Response status:', res.status);
+                    console.log('Response headers:', [...res.headers.entries()]);
+                    
+                    // First get the raw text
+                    return res.text().then(text => {
+                        console.log('Raw response:', text);
+                        
+                        // Try to parse it as JSON
+                        try {
+                            if (!text) {
+                                throw new Error('Empty response');
+                            }
+                            return JSON.parse(text);
+                        } catch (e) {
+                            console.error('JSON parse error:', e);
+                            console.error('Raw text received:', text);
+                            throw e;
+                        }
+                    });
+                })
+                .then(data => {
+                    console.log('Parsed data:', data);
+                    const container = document.getElementById('feedbacks-section');
+                    container.innerHTML = '<h2>Avis de nos clients</h2>';
+
+                    if (!Array.isArray(data) || data.length === 0) {
+                        container.innerHTML += '<p>Aucun avis disponible pour le moment.</p>';
+                        return;
+                    }
+
+                    data.forEach(fb => {
+                        const card = document.createElement('div');
+                        card.className = 'feedback-card';
+                        card.innerHTML = `
+                            <div class="dish-name">${fb.item_name}</div>
+                            <div class="rating">${'★'.repeat(fb.rating)}${'☆'.repeat(5 - fb.rating)}</div>
+                            <div class="comment">${fb.comnt || 'Pas de commentaire'}</div>
+                        `;
+                        container.appendChild(card);
+                    });
+                })
+                .catch(err => {
+                    console.error('Load error:', err);
+                    const container = document.getElementById('feedbacks-section');
+                    container.innerHTML = `
+                        <p style="color:red;">
+                            Erreur: ${err.message}<br>
+                            Veuillez vérifier la console pour plus de détails.
+                        </p>
+                    `;
+                });
+        }
+        </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('../PHP/get_menu_items_rev.php')
+    .then(response => response.json())
+    .then(items => {
+        const select = document.getElementById('selected-item');
+        select.innerHTML = '<option value="">Choisissez un plat</option>';
+        items.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item.id; // Use the item_id as value
+            option.textContent = item.name; // Use the item name as text
+            select.appendChild(option);
+        });
+    })
+    .catch(error => {
+        console.error('Error loading menu items:', error);
+        const select = document.getElementById('selected-item');
+        select.innerHTML = '<option value="">Erreur de chargement</option>';
+    });
+});
+        </script>
+        
+        
+</body>
+</html>

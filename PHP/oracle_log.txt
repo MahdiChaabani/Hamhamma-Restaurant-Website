@@ -1,0 +1,85 @@
+2025-05-25 12:51:08 - Error: Données invalides: item_id et rating sont requis
+2025-05-25 12:51:08 - Connexion fermée
+2025-05-25 12:51:13 - Error: Données invalides: item_id et rating sont requis
+2025-05-25 12:51:13 - Connexion fermée
+2025-05-25 12:55:32 - Tentative de connexion à Oracle
+2025-05-25 12:55:32 - Connexion réussie
+2025-05-25 12:55:32 - Données reçues: item_id=3, rating=3, comment=test ojja
+2025-05-25 12:55:32 - Exécution insertion
+2025-05-25 12:55:32 - Connexion fermée
+2025-05-25 12:56:19 - Tentative de connexion à Oracle
+2025-05-25 12:56:19 - Connexion réussie
+2025-05-25 12:56:19 - Données reçues: item_id=2, rating=3, comment=test brik
+2025-05-25 12:56:19 - Exécution insertion
+2025-05-25 12:56:19 - Connexion fermée
+2025-05-27 19:22:10 - Tentative de connexion à Oracle
+2025-05-27 19:22:10 - Connexion réussie
+2025-05-27 19:22:10 - Données reçues: item_id=4, rating=3, comment=33
+2025-05-27 19:22:10 - Error: Invalid ITEM_ID
+2025-05-27 19:22:10 - Connexion fermée
+2025-05-27 19:22:18 - Tentative de connexion à Oracle
+2025-05-27 19:22:18 - Connexion réussie
+2025-05-27 19:22:18 - Données reçues: item_id=1, rating=3, comment=33
+2025-05-27 19:22:18 - Error: Invalid ITEM_ID
+2025-05-27 19:22:18 - Connexion fermée
+2025-05-27 19:22:25 - Tentative de connexion à Oracle
+2025-05-27 19:22:25 - Connexion réussie
+2025-05-27 19:22:25 - Données reçues: item_id=3, rating=3, comment=33
+2025-05-27 19:22:25 - Error: Invalid ITEM_ID
+2025-05-27 19:22:25 - Connexion fermée
+2025-05-27 19:22:29 - Tentative de connexion à Oracle
+2025-05-27 19:22:29 - Connexion réussie
+2025-05-27 19:22:29 - Données reçues: item_id=4, rating=3, comment=33
+2025-05-27 19:22:29 - Error: Invalid ITEM_ID
+2025-05-27 19:22:29 - Connexion fermée
+2025-05-27 22:19:19 - Tentative de connexion à Oracle
+2025-05-27 22:19:19 - Connexion réussie
+2025-05-27 22:19:19 - Données reçues: item_id=3, rating=2, comment=jhf
+2025-05-27 22:19:19 - Error: Invalid ITEM_ID
+2025-05-27 22:19:19 - Connexion fermée
+2025-05-27 22:32:30 - Tentative de connexion à Oracle
+2025-05-27 22:32:30 - Connexion réussie
+2025-05-27 22:32:30 - Données reçues: item_id=3, rating=3, comment=k
+2025-05-27 22:32:30 - Error: Invalid ITEM_ID
+2025-05-27 22:32:30 - Connexion fermée
+2025-05-27 22:33:32 - Tentative de connexion à Oracle
+2025-05-27 22:33:32 - Connexion réussie
+2025-05-27 22:33:32 - Données reçues: item_id=1, rating=3, comment=g
+2025-05-27 22:33:32 - Error: Invalid ITEM_ID
+2025-05-27 22:33:32 - Connexion fermée
+2025-05-27 22:47:14 - Tentative de connexion à Oracle
+2025-05-27 22:47:14 - Connexion réussie
+2025-05-27 22:47:14 - Données reçues: item_id=1, rating=3, comment=;jb
+2025-05-27 22:47:14 - Exécution insertion
+2025-05-27 22:47:14 - Error: Erreur lors de l'exécution de la requête: ORA-02289: sequence does not exist
+2025-05-27 22:47:14 - Connexion fermée
+2025-05-27 22:49:25 - Tentative de connexion à Oracle
+2025-05-27 22:49:25 - Connexion réussie
+2025-05-27 22:49:25 - Données reçues: item_id=2, rating=3, comment=JHK
+2025-05-27 22:49:25 - Exécution insertion
+2025-05-27 22:49:25 - Connexion fermée
+2025-05-27 22:51:33 - Tentative de connexion à Oracle
+2025-05-27 22:51:33 - Connexion réussie
+2025-05-27 22:51:33 - Données reçues: item_id=2, rating=4, comment=BENNNNNNNNNNNNNNNNNNNA
+2025-05-27 22:51:33 - Exécution insertion
+2025-05-27 22:51:33 - Connexion fermée
+2025-05-28 00:34:31 - Tentative de connexion à Oracle
+2025-05-28 00:34:31 - Connexion réussie
+2025-05-28 00:34:31 - Données reçues: item_id=4, rating=5, comment=bninn bourjouleya :) 
+2025-05-28 00:34:31 - Exécution insertion
+2025-05-28 00:34:31 - Connexion fermée
+2025-05-28 00:40:40 - Tentative de connexion à Oracle
+2025-05-28 00:40:40 - Connexion réussie
+2025-05-28 00:40:40 - Données reçues: item_id=4, rating=4, comment=bien
+2025-05-28 00:40:40 - Exécution insertion
+2025-05-28 00:40:40 - Connexion fermée
+2025-05-28 12:53:21 - Tentative de connexion à Oracle
+2025-05-28 12:53:21 - Connexion réussie
+2025-05-28 12:53:21 - Données reçues: item_id=4, rating=5, comment=>>>>>>>>>>>>>>>>>>>>>>   hayelllllll
+2025-05-28 12:53:21 - Exécution insertion
+2025-05-28 12:53:21 - Connexion fermée
+2025-05-28 15:19:46 - Tentative de connexion à Oracle
+2025-05-28 15:19:46 - Connexion réussie
+2025-05-28 15:19:46 - Données reçues: item_id=2, rating=4, comment=tajinzaaa bina 3ala bennnnnnnnnnnna 
+2025-05-28 15:19:46 - Exécution insertion
+2025-05-28 15:19:46 - Connexion fermée

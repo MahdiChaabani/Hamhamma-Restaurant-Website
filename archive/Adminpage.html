@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff4e6;
+    }
+
+    .header {
+      background-color: #f15a24;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .toolbar {
+      background-color: #ffeacc;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .toolbar input[type="text"],
+    .toolbar input[type="date"] {
+      padding: 7px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .toolbar button {
+      padding: 7px 14px;
+      background-color: #f15a24;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .main {
+      display: flex;
+      padding: 20px;
+      gap: 30px;
+    }
+
+    .data-section {
+      flex: 2;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ffd5b5;
+    }
+
+    .form-section {
+      flex: 1;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .form-section h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .form-section label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-section input[type="text"],
+    .form-section input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-section input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .form-section button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #f15a24;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .existing-items {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .item-card {
+      border: 1px solid #ddd;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      background-color: #fffaf2;
+    }
+
+    .item-card button {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .item-card button:first-child {
+      background-color: #ffa74f;
+      margin-right: 8px;
+    }
+
+    .item-card button:last-child {
+      background-color: #e74c3c;
+    }
+
+    .actions {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .actions button {
+      padding: 8px 16px;
+      margin: 0 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ffa74f;
+      color: white;
+      cursor: pointer;
+    }
+
+    .actions button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("ajouter-btn").addEventListener("click", ajouterArticle);
+    });
+    
+    function ajouterArticle() {
+      const nom = document.getElementById("item-name").value;
+      const description = document.getElementById("item-desc").value;
+      const prix = document.getElementById("item-price").value;
+      const image = document.getElementById("item-image").value;
+      const disponible = document.getElementById("item-available").checked ? 1 : 0;
+    
+      const formData = new FormData();
+      formData.append("nom", nom);
+      formData.append("description", description);
+      formData.append("prix", prix);
+      formData.append("url_image", image);
+      formData.append("disponible", disponible);
+    
+      fetch("ajouter_article.php", {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          // Ajout dynamique dans la section "Éléments existants"
+          const container = document.querySelector(".existing-items");
+          const div = document.createElement("div");
+          div.className = "item-card";
+          div.innerHTML = `
+            <strong>${nom}</strong><br>
+            <em>${description}</em><br>
+            <div>Prix : <strong>${prix} DT</strong></div>
+            <div>Statut : <span style="color: ${disponible ? 'green' : 'red'};">${disponible ? 'Disponible' : 'Indisponible'}</span></div>
+            <div style="margin-top: 10px;">
+              <button onclick="modifierArticle(${data.id})">Modifier</button>
+              <button onclick="supprimerArticle(${data.id})">Supprimer</button>
+            </div>`;
+          container.prepend(div);
+    
+          // Reset form
+          document.getElementById("item-name").value = "";
+          document.getElementById("item-desc").value = "";
+          document.getElementById("item-price").value = "";
+          document.getElementById("item-image").value = "";
+          document.getElementById("item-available").checked = false;
+        } else {
+          alert("Erreur : " + data.message);
+        }
+      });
+    }
+    </script>
+    
+    <!--  -->
+    <script>
+      function rechercherReservation() {
+        const nom = document.getElementById('search-name').value.trim();
+        const date = document.getElementById('filter-date').value;
+      
+        if (!nom || !date) {
+          alert("Veuillez entrer le nom et la date.");
+          return;
+        }
+      
+        fetch('rechercher_reservation.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ nom, date })
+        })
+        .then(response => response.json())
+        .then(data => {
+          const tbody = document.querySelector("table tbody");
+          tbody.innerHTML = "";
+          if (data.length === 0) {
+            tbody.innerHTML = "<tr><td colspan='6'>Aucune réservation trouvée.</td></tr>";
+          } else {
+            data.forEach(res => {
+              const row = `
+                <tr>
+                  <td>${res.ID_RESERVATION}</td>
+                  <td>${res.NOM_COMPLET}</td>
+                  <td>${res.TELEPHONE}</td>
+                  <td>${res.PLAT_CHOISI}</td>
+                  <td>${res.DATE_RESERVATION}</td>
+                  <td>${res.ID_PLAT}</td>
+                </tr>
+              `;
+              tbody.innerHTML += row;
+            });
+          }
+        })
+        .catch(error => console.error("Erreur :", error));
+      }
+      </script>      
+    
+</head>
+<body>
+
+  <div class="header"><i class="bi bi-box-arrow-left"></i>
+    <a href="index.html"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+      <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+    </svg></a>
+
+    Panneau d'Administration
+    
+  </div>
+
+  <div class="toolbar">
+    <label for="filter-date">Date :</label>
+    <input type="date" id="filter-date">
+
+    <label for="search-name">Nom du client :</label>
+    <input type="text" id="search-name">
+
+    <button onclick="rechercherReservation()">Rechercher</button>
+    <button>Réinitialiser</button>
+  </div>
+
+  <div class="main">
+    <!-- TABLEAU DES COMMANDES -->
+    <div class="data-section">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom Client</th>
+            <th>Téléphone</th>
+            <th>Article</th>
+            <th>Date-Time</th>
+            <th>ID_Plat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Contenu dynamique -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- FORMULAIRE AJOUT ARTICLE -->
+    <div class="form-section">
+      <h3>Ajouter un article au menu</h3>
+
+      <label for="item-name">Nom de l'article</label>
+      <input type="text" id="item-name">
+
+      <label for="item-desc">Description</label>
+      <input type="text" id="item-desc">
+
+      <label for="item-price">Prix (DT)</label>
+      <input type="number" id="item-price" step="0.01">
+
+      <label for="item-image">URL de l'image</label>
+      <input type="text" id="item-image">
+
+      <label><input type="checkbox" id="item-available"> Disponible</label>
+
+      <button>Ajouter l'article</button>
+
+      <hr style="margin: 25px 0; border-color: #ffeacc;">
+
+      <h3>Éléments existants</h3>
+      <div class="existing-items">
+
+        <!-- Exemple d'article -->
+        <div class="item-card">
+          <strong>Pizza Margherita</strong><br>
+          <em>Base tomate, mozzarella, basilic frais.</em><br>
+          <div>Prix : <strong>18 DT</strong></div>
+          <div>Statut : <span style="color: green;">Disponible</span></div>
+          <div style="margin-top: 10px;">
+            <button>Modifier</button>
+            <button>Supprimer</button>
+          </div>
+        </div>
+
+        <div class="item-card">
+          <strong>Tagine Poulet</strong><br>
+          <em>Aux olives et citron confit.</em><br>
+          <div>Prix : <strong>22 DT</strong></div>
+          <div>Statut : <span style="color: red;">Indisponible</span></div>
+          <div style="margin-top: 10px;">
+            <button>Modifier</button>
+            <button>Supprimer</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button>Ajouter</button>
+    <button>Modifier</button>
+    <button>Supprimer</button>
+  </div>
+
+</body>
+</html>

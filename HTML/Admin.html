@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff4e6;
+    }
+
+    .header {
+      background-color: #f15a24;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .login-container {
+      background-color: #fff;
+      width: 350px;
+      margin: 60px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .login-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #f15a24;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-container button:hover {
+      background-color: #d94d1f;
+    }
+ footer {
+            background-color: #1a0e0ea9;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 120px;
+        }
+        footer .social {
+            border-radius: 50%;
+        }
+        footer .social-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+  </style>
+</head>
+<body>
+
+  <div class="header"><i class="bi bi-box-arrow-left"></i>
+    <a href="../index.html"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+      <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+    </svg></a>
+Bienvenue</div>
+
+  <div class="login-container">
+    <h2>Connexion</h2>
+    <form action="../PHP/login.php" method="post">
+      <label for="username">Nom d'utilisateur</label>
+      <input type="text" id="username" name="username" placeholder="Entrez votre nom">
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe">
+
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+
+ <footer>
+        <p>&copy; 2BIS : Mahdi Chaabani | Ghaith Homrani | Souhail Akermi.</p>
+        <div class="social-icons">
+            <a href="#" > <img class="social" src="../images/Facebook_Logo_2023.png" width="30px" height="30px" alt="" srcset=""></a>
+            <a href="#" > <img class="social" src="../images/twitterr.png" width="30px" height="30px" alt="" srcset=""></a>
+            <a href="#" > <img class="social" src="../images/instaaa.png" width="30px" height="30px" alt="" srcset=""></a>
+    </footer>
+
+</body>
+</html>

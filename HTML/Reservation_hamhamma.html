@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo_1.png" type="image/x-icon">
+	<link rel="stylesheet" href="../CSS/Messtyles.css">
+    <title>Réservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #d7c6ab;
+            
+        }
+
+        .reservation-form {
+            background: #ffffff;
+            
+            margin-left: 500px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .reservation-form h2 {
+            
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group.full-width {
+            grid-template-columns: 1fr;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            
+            
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+            resize: none;
+            height: 80px;
+            width: 100px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ef6d16;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #555;
+            border: 1px solid #d7770a;
+        }
+
+        /* Style pour les messages d'erreur */
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+      
+    
+    footer {
+        background-color: #1a0e0ea9;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 70px;
+    }
+    footer .social {
+        border-radius: 50%;
+    }
+    footer .social-icons a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <img src="../images/logo_1.png" alt="logo" class="logo"> 
+            <div class="wavy">
+                <h3>
+                    <span class="span1" style="--i:1">h</span>
+                    <span class="span1" style="--i:2">a</span>
+                    <span class="span1" style="--i:3">m</span>
+                    <span class="span1" style="--i:4">h</span>
+                    <span class="span1" style="--i:5">a </span>
+                    <span class="span1" style="--i:6">m</span>
+                    <span class="span1" style="--i:7">a</span>
+                    <span class="span1" style="--i:11">.</span> 
+                    <span class="span1" style="--i:12">.</span>  
+                    <span class="span1" style="--i:13">.</span>  
+                </h3> 
+            </div>
+            <ul>
+				<li class="li"><a href="../index.html" >Accueil </a></li>
+                <li class="li"><a href="./about.html" >À propos </a></li>
+                <li class="li"><a href="../PHP/menu.php" >Menu </a></li>
+                <li class="li"><a href="./contact_us_page.html" >Contact </a></li>
+                <li class="li"><a href="#" >Réservation </a></li>
+                <li class="li"><a href="./customer-review0.2.html" >Avis</a></li>
+                <li><a href="./Admin.html">Admin</a></li>
+            </ul>
+        </div> 
+
+    <form class="reservation-form" action="../PHP/Insert_Reservation.php" method="post">
+        <h2>Réserver un plat</h2>
+        
+        <div class="form-group" onsubmit="submitForm(event)">
+            <div>
+                <label for="selected-item">Entrer Votre Choix:</label>
+                <select id="selected-item" name="selected-item" required>
+                    <option value="">Chargement...</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" >
+                <div id="nameError" class="error"></div> 
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+                <div id="phoneError" class="error"></div>
+            </div>
+            <div>
+                <label for="date">Date de réservation</label>
+                <input type="date" id="date" name="date" required>
+                <div id="dateError" class="error"></div> 
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label for="time">Heure</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div>
+                <label for="guests">Nombre de personnes</label>
+                <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Choisir...</option>
+                    <option value="1">1 personne</option>
+                    <option value="2">2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                    <option value="5">5 personnes</option>
+                    <option value="6">6 personnes</option>
+                </select>
+                <div id="guestsError" class="error"></div> 
+            </div>
+        </div>
+
+        <!-- <div class="form-group full-width">
+            <label for="message">Message (optionnel)</label>
+            <textarea id="message" name="message" placeholder="Demande spéciale" width="30"></textarea>
+        </div> -->
+
+        <div class="form-group full-width">
+            <button type="submit" onclick="verif1()">Réserver</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>&copy; 2BIS : Mahdi Chaabani | Ghaith Homrani | Souhail Akermi.</p>
+        <div class="social-icons">
+			<a href="#" > <img class="social" src="../images/Facebook_Logo_2023.png" width="30px" height="30px" alt="" srcset=""></a>
+			<a href="#" > <img class="social" src="../images/twitterr.png" width="30px" height="30px" alt="" srcset=""></a>
+			<a href="#" > <img class="social" src="../images/instaaa.png" width="30px" height="30px" alt="" srcset=""></a>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    fetch('../PHP/get_menu_items_rev.php')
+    .then(response => response.json())
+    .then(items => {
+        const select = document.getElementById('selected-item');
+        select.innerHTML = '<option value="">Choisissez un plat</option>';
+        items.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item.name;       
+            option.textContent = item.name;  
+            select.appendChild(option);
+        });
+    })
+    .catch(() => {
+        const select = document.getElementById('selected-item');
+        select.innerHTML = '<option value="">Erreur de chargement</option>';
+    });
+});
+    </script>
+</body>
+</html>

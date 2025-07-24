@@ -1,0 +1,245 @@
+2025-05-04 03:32:39 - Tentative de connexion à Oracle
+2025-05-04 03:32:39 - Connexion réussie
+2025-05-04 03:32:39 - Données reçues: item_id=22, rating=1, comment=okbro
+2025-05-04 03:32:39 - Nombre d'avis existants pour l'item 22: 1
+2025-05-04 03:32:39 - Exécution mise à jour
+2025-05-04 03:32:39 - Erreur lors de l'exécution de la requête: ORA-01747: invalid user.table.column, table.column, or column specification
+2025-05-04 03:32:39 - Connexion fermée
+2025-05-17 18:03:45 - Tentative de connexion à Oracle
+2025-05-17 18:03:45 - Connexion réussie
+2025-05-17 18:03:45 - Données reçues: item_id=22, rating=3, comment=
+2025-05-17 18:03:45 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:03:45 - Exécution mise à jour
+2025-05-17 18:03:45 - Erreur lors de l'exécution de la requête: ORA-01747: invalid user.table.column, table.column, or column specification
+2025-05-17 18:03:45 - Connexion fermée
+2025-05-17 18:04:21 - Tentative de connexion à Oracle
+2025-05-17 18:04:21 - Connexion réussie
+2025-05-17 18:04:21 - Données reçues: item_id=22, rating=1, comment=
+2025-05-17 18:04:21 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:04:21 - Exécution mise à jour
+2025-05-17 18:04:21 - Erreur lors de l'exécution de la requête: ORA-01747: invalid user.table.column, table.column, or column specification
+2025-05-17 18:04:21 - Connexion fermée
+2025-05-17 18:16:02 - Tentative de connexion à Oracle
+2025-05-17 18:16:02 - Connexion réussie
+2025-05-17 18:16:02 - Données reçues: item_id=22, rating=1, comment=
+2025-05-17 18:16:02 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:16:02 - Exécution mise à jour
+2025-05-17 18:16:02 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:16:02 - Connexion fermée
+2025-05-17 18:27:24 - Tentative de connexion à Oracle
+2025-05-17 18:27:24 - Connexion réussie
+2025-05-17 18:27:24 - Données reçues: item_id=22, rating=5, comment=
+2025-05-17 18:27:24 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:27:24 - Exécution mise à jour
+2025-05-17 18:27:24 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:27:24 - Connexion fermée
+2025-05-17 18:27:26 - Tentative de connexion à Oracle
+2025-05-17 18:27:26 - Connexion réussie
+2025-05-17 18:27:26 - Données reçues: item_id=22, rating=5, comment=
+2025-05-17 18:27:26 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:27:26 - Exécution mise à jour
+2025-05-17 18:27:26 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:27:26 - Connexion fermée
+2025-05-17 18:27:39 - Tentative de connexion à Oracle
+2025-05-17 18:27:39 - Connexion réussie
+2025-05-17 18:27:39 - Données reçues: item_id=22, rating=5, comment=ok
+2025-05-17 18:27:39 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:27:39 - Exécution mise à jour
+2025-05-17 18:27:39 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:27:39 - Connexion fermée
+2025-05-17 18:27:40 - Tentative de connexion à Oracle
+2025-05-17 18:27:40 - Connexion réussie
+2025-05-17 18:27:40 - Données reçues: item_id=22, rating=5, comment=ok
+2025-05-17 18:27:40 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:27:40 - Exécution mise à jour
+2025-05-17 18:27:40 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:27:40 - Connexion fermée
+2025-05-17 18:27:41 - Tentative de connexion à Oracle
+2025-05-17 18:27:41 - Connexion réussie
+2025-05-17 18:27:41 - Données reçues: item_id=22, rating=5, comment=ok
+2025-05-17 18:27:41 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:27:41 - Exécution mise à jour
+2025-05-17 18:27:41 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:27:41 - Connexion fermée
+2025-05-17 18:27:41 - Tentative de connexion à Oracle
+2025-05-17 18:27:41 - Connexion réussie
+2025-05-17 18:27:41 - Données reçues: item_id=22, rating=5, comment=ok
+2025-05-17 18:27:41 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:27:41 - Exécution mise à jour
+2025-05-17 18:27:41 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:27:41 - Connexion fermée
+2025-05-17 18:27:41 - Tentative de connexion à Oracle
+2025-05-17 18:27:41 - Connexion réussie
+2025-05-17 18:27:41 - Données reçues: item_id=22, rating=5, comment=ok
+2025-05-17 18:27:41 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:27:41 - Exécution mise à jour
+2025-05-17 18:27:41 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:27:41 - Connexion fermée
+2025-05-17 18:27:41 - Tentative de connexion à Oracle
+2025-05-17 18:27:41 - Connexion réussie
+2025-05-17 18:27:41 - Données reçues: item_id=22, rating=5, comment=ok
+2025-05-17 18:27:41 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:27:41 - Exécution mise à jour
+2025-05-17 18:27:41 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:27:41 - Connexion fermée
+2025-05-17 18:32:27 - Tentative de connexion à Oracle
+2025-05-17 18:32:27 - Connexion réussie
+2025-05-17 18:32:27 - Données reçues: item_id=22, rating=5, comment=nosss
+2025-05-17 18:32:27 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:32:27 - Exécution mise à jour
+2025-05-17 18:32:27 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:32:27 - Connexion fermée
+2025-05-17 18:32:29 - Tentative de connexion à Oracle
+2025-05-17 18:32:29 - Connexion réussie
+2025-05-17 18:32:29 - Données reçues: item_id=22, rating=5, comment=nosss
+2025-05-17 18:32:29 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:32:29 - Exécution mise à jour
+2025-05-17 18:32:29 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:32:29 - Connexion fermée
+2025-05-17 18:32:29 - Tentative de connexion à Oracle
+2025-05-17 18:32:29 - Connexion réussie
+2025-05-17 18:32:29 - Données reçues: item_id=22, rating=5, comment=nosss
+2025-05-17 18:32:29 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:32:29 - Exécution mise à jour
+2025-05-17 18:32:29 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:32:29 - Connexion fermée
+2025-05-17 18:32:42 - Tentative de connexion à Oracle
+2025-05-17 18:32:42 - Connexion réussie
+2025-05-17 18:32:42 - Données reçues: item_id=22, rating=4, comment=okokok
+2025-05-17 18:32:42 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:32:42 - Exécution mise à jour
+2025-05-17 18:32:42 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:32:42 - Connexion fermée
+2025-05-17 18:32:45 - Tentative de connexion à Oracle
+2025-05-17 18:32:45 - Connexion réussie
+2025-05-17 18:32:45 - Données reçues: item_id=22, rating=4, comment=okokok
+2025-05-17 18:32:45 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:32:45 - Exécution mise à jour
+2025-05-17 18:32:45 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:32:45 - Connexion fermée
+2025-05-17 18:32:46 - Tentative de connexion à Oracle
+2025-05-17 18:32:46 - Connexion réussie
+2025-05-17 18:32:46 - Données reçues: item_id=22, rating=4, comment=okokok
+2025-05-17 18:32:46 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:32:46 - Exécution mise à jour
+2025-05-17 18:32:46 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:32:46 - Connexion fermée
+2025-05-17 18:38:06 - Tentative de connexion à Oracle
+2025-05-17 18:38:06 - Connexion réussie
+2025-05-17 18:38:06 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:38:06 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:38:06 - Exécution mise à jour
+2025-05-17 18:38:06 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:38:06 - Connexion fermée
+2025-05-17 18:38:12 - Tentative de connexion à Oracle
+2025-05-17 18:38:12 - Connexion réussie
+2025-05-17 18:38:12 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:38:12 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:38:12 - Exécution mise à jour
+2025-05-17 18:38:12 - Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:38:12 - Connexion fermée
+2025-05-17 18:40:52 - Tentative de connexion à Oracle
+2025-05-17 18:40:52 - Connexion réussie
+2025-05-17 18:40:52 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:40:52 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:40:52 - Exécution mise à jour
+2025-05-17 18:40:52 - Error: Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:40:52 - Connexion fermée
+2025-05-17 18:41:23 - Tentative de connexion à Oracle
+2025-05-17 18:41:23 - Connexion réussie
+2025-05-17 18:41:23 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:41:23 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:41:23 - Exécution mise à jour
+2025-05-17 18:41:23 - Error: Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:41:23 - Connexion fermée
+2025-05-17 18:44:26 - Tentative de connexion à Oracle
+2025-05-17 18:44:26 - Connexion réussie
+2025-05-17 18:44:26 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:44:26 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:44:26 - Exécution mise à jour
+2025-05-17 18:44:26 - Error: Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:44:26 - Connexion fermée
+2025-05-17 18:44:53 - Tentative de connexion à Oracle
+2025-05-17 18:44:53 - Connexion réussie
+2025-05-17 18:44:53 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:44:53 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:44:53 - Exécution mise à jour
+2025-05-17 18:44:53 - Error: Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:44:53 - Connexion fermée
+2025-05-17 18:46:09 - Tentative de connexion à Oracle
+2025-05-17 18:46:09 - Connexion réussie
+2025-05-17 18:46:09 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:46:09 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:46:09 - Exécution mise à jour
+2025-05-17 18:46:09 - Error: Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:46:09 - Connexion fermée
+2025-05-17 18:48:54 - Tentative de connexion à Oracle
+2025-05-17 18:48:54 - Connexion réussie
+2025-05-17 18:48:54 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:48:54 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:48:54 - Exécution mise à jour
+2025-05-17 18:48:54 - Error: Erreur lors de l'exécution de la requête: ORA-01745: invalid host/bind variable name
+2025-05-17 18:48:54 - Connexion fermée
+2025-05-17 18:50:31 - Tentative de connexion à Oracle
+2025-05-17 18:50:31 - Connexion réussie
+2025-05-17 18:50:31 - Données reçues: item_id=22, rating=5, comment=e
+2025-05-17 18:50:31 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:50:31 - Exécution mise à jour
+2025-05-17 18:50:31 - Connexion fermée
+2025-05-17 18:51:09 - Tentative de connexion à Oracle
+2025-05-17 18:51:09 - Connexion réussie
+2025-05-17 18:51:09 - Données reçues: item_id=22, rating=2, comment=bro what
+2025-05-17 18:51:09 - Nombre d'avis existants pour l'item 22: 4
+2025-05-17 18:51:09 - Exécution mise à jour
+2025-05-17 18:51:09 - Connexion fermée
+2025-05-17 18:52:48 - Tentative de connexion à Oracle
+2025-05-17 18:52:48 - Connexion réussie
+2025-05-17 18:52:48 - Données reçues: item_id=22, rating=2, comment=surely now
+2025-05-17 18:52:48 - Error: Erreur lors de l'exécution de la requête: 
+2025-05-17 18:52:48 - Connexion fermée
+2025-05-17 18:53:54 - Tentative de connexion à Oracle
+2025-05-17 18:53:54 - Connexion réussie
+2025-05-17 18:53:54 - Données reçues: item_id=22, rating=2, comment=surely now
+2025-05-17 18:53:54 - Exécution insertion
+2025-05-17 18:53:54 - Error: Erreur lors de l'exécution de la requête: ORA-02287: sequence number not allowed here
+2025-05-17 18:53:54 - Connexion fermée
+2025-05-17 18:54:08 - Tentative de connexion à Oracle
+2025-05-17 18:54:08 - Connexion réussie
+2025-05-17 18:54:08 - Données reçues: item_id=22, rating=2, comment=surely now
+2025-05-17 18:54:08 - Exécution insertion
+2025-05-17 18:54:08 - Error: Erreur lors de l'exécution de la requête: ORA-02287: sequence number not allowed here
+2025-05-17 18:54:08 - Connexion fermée
+2025-05-17 18:56:18 - Tentative de connexion à Oracle
+2025-05-17 18:56:18 - Connexion réussie
+2025-05-17 18:56:18 - Données reçues: item_id=22, rating=2, comment=surely now
+2025-05-17 18:56:18 - Exécution insertion
+2025-05-17 18:56:18 - Error: Erreur lors de l'exécution de la requête: ORA-01400: cannot insert NULL into ("HAMHAMA"."CLIENTFEEDBACK"."FEEDBACK_ID")
+2025-05-17 18:56:18 - Connexion fermée
+2025-05-17 18:57:05 - Tentative de connexion à Oracle
+2025-05-17 18:57:05 - Connexion réussie
+2025-05-17 18:57:05 - Données reçues: item_id=22, rating=2, comment=surely now
+2025-05-17 18:57:05 - Exécution insertion
+2025-05-17 18:57:05 - Error: Erreur lors de l'exécution de la requête: ORA-02287: sequence number not allowed here
+2025-05-17 18:57:05 - Connexion fermée
+2025-05-17 18:57:17 - Tentative de connexion à Oracle
+2025-05-17 18:57:17 - Connexion réussie
+2025-05-17 18:57:17 - Données reçues: item_id=22, rating=2, comment=surely now
+2025-05-17 18:57:17 - Exécution insertion
+2025-05-17 18:57:17 - Error: Erreur lors de l'exécution de la requête: ORA-02287: sequence number not allowed here
+2025-05-17 18:57:17 - Connexion fermée
+2025-05-17 18:58:22 - Tentative de connexion à Oracle
+2025-05-17 18:58:22 - Connexion réussie
+2025-05-17 18:58:22 - Données reçues: item_id=22, rating=2, comment=surely now
+2025-05-17 18:58:22 - Exécution insertion
+2025-05-17 18:58:22 - Error: Erreur lors de l'exécution de la requête: ORA-01400: cannot insert NULL into ("HAMHAMA"."CLIENTFEEDBACK"."FEEDBACK_ID")
+2025-05-17 18:58:22 - Connexion fermée
+2025-05-17 19:00:47 - Tentative de connexion à Oracle
+2025-05-17 19:00:47 - Connexion réussie
+2025-05-17 19:00:47 - Données reçues: item_id=22, rating=2, comment=surely now
+2025-05-17 19:00:47 - Exécution insertion
+2025-05-17 19:00:47 - Connexion fermée
+2025-05-24 21:06:11 - Tentative de connexion à Oracle
+2025-05-24 21:06:11 - Connexion réussie
+2025-05-24 21:06:11 - Données reçues: item_id=102, rating=2, comment=
+2025-05-24 21:06:11 - Error: Invalid ITEM_ID
+2025-05-24 21:06:11 - Connexion fermée

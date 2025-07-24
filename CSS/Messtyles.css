@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+}
+.body_index{
+     background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url(../images/restaurant.avif);
+     background-size: cover;
+     background-position: center;
+}
+.banner{
+    width: 100%;
+    height: 18vh;
+    background-color: #ab2c25;
+    display: inline-block;
+   
+}
+.navbar{
+    width:92% ;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: -15px;
+    width: 180px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+ul{
+    margin-bottom: 90px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: system-ui;
+    font-weight: 500;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    top:25px ;
+    transition: 0.5s ;
+}
+.navbar ul li:hover::after{
+    width:100% ;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    margin : 20px auto;
+    font-weight: 100px;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #e74c3c;
+    background: transparent;
+    color : #fff;
+    cursor: pointer;
+    position: relative;
+}
+.modification_bottom{
+    background: #fe7106;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+
+/* CSS Restaurant */
+
+.btn{
+    color: white;
+    background-color:rgb(92, 30, 236);
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    color:rgb(92, 30, 236); 
+    background-color: transparent;
+    border: 2px solid rgb(92, 30, 236);
+}
+.part_formulaire{
+    margin-top: 50px;
+    padding: 40px  0px ;
+    background-color: rgba(92, 30, 236, 0.08);
+    text-align: center;
+}
+.part_formulaire>h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.inp{
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    height: 32px;
+    width: 850px;
+    border: none;
+}
+#message{
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: none;
+    width: 850px;
+    height: 150px;
+}
+span{
+    color:rgb(254, 254, 254);
+    text-transform: capitalize;
+}
+
+/*  about us */
+
+section{
+    margin-top: -30px;
+    height: 85vh;
+}
+
+.about {
+	text-transform: capitalize;
+    color: #FF6600;
+	font-family: 'Pacifico';
+}
+
+.us {
+	text-transform: capitalize;
+    color: black;
+	font-family: 'Pacifico';
+}
+
+.notre-plat-couscous {
+    width: 40%;          /* Redimensionner l'image à 100% de la largeur de son conteneur */
+    height: auto;         /* Maintenir les proportions de l'image */
+    margin: 20px;
+    border-radius: 20px;  /* Arrondir les coins de l'image */
+    display: block;       /* Supprimer les marges indésirables en dessous de l'image */
+    margin-bottom: 2px;
+}
+
+.about-text{
+	transform: translateY(-500px);/* Déplace le texte de 30px vers le haut*/
+	overflow: hidden;
+    margin-left: 45%;
+}
+
+#titre-principale{
+    font-size: 32px;
+    margin-top: 16px;
+}
+.about-text h2 {
+    margin-top: 0;       /* Retire la marge en haut des titres */
+    margin-bottom: 10px; /* Espace sous les titres */
+}
+.about-text article {
+	font-family: Arial,helvetica,sans-serif; /* Applique la police Arial */
+    font-size: 15px;     /* Taille de la police pour le texte */
+    line-height: 1.5;    /* Espacement entre les lignes */
+    color: #333;         /* Couleur du texte */
+    width: 92%;
+}
+
+.video-container {
+    position: relative;
+    width: 60%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: -460px auto;
+  }
+  
+  .video-window {
+    position: relative;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+
+/*  style menu  */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d7c6ab;
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header ul li {
+    margin: 0 15px;
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    height: 60vh;
+    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #ffffffbb;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.card h3 {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 2em;
+    margin: 10px 0;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px;
+}
+.card .stars {
+    color: gold;
+    margin: 5px 0;
+}
+.card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+.card button {
+    background-color: #ef6d16;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #555;
+}
+
+.card:hover{
+transform: translateY(-5px); /* Effet de survol pour un léger mouvement */
+}
+.footer_all_seul_menu {
+    background-color: #000000ec;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 1000px;
+}
+
+.footer_all_seul_menu .social {
+    border-radius: 50%;
+}
+.footer_all_seul_menu .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* style customer review  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfccad;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    margin-bottom: -380px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.chef {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.chef:hover {
+    transform: scale(1.03);
+}
+
+.chef img {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #e62222;
+}
+
+.chef-info {
+    flex: 1;
+}
+
+.chef h2 {
+    margin: 0 0 10px;
+    font-size: 1.8em;
+    color: #e67e22;
+}
+
+.chef p {
+    margin: 0 0 15px;
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+.stars {
+    color: #ffeb13;
+    font-size: 1.5em;
+}
+
+
+/*galleryy*/
+.wavy{
+    margin-left: -300px;
+    margin-top: -45px;
+}
+.wavy h3 .span1{
+    position: relative;
+    display: inline-block;
+    margin-left: 1px;
+    color: #ffffff;
+    font-size: 1.9em;
+    font-family: "Rubik Vinyl", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i)); 
+}
+.wavy .span1{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 1em;
+    animation: animate .5s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i)); 
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+        }    
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+/* page contact us */
+
+.contact-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 395px;
+    width: 110%;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+.contact-form button{
+    width: 96%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid red ;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #f06b06;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #382909;
+}
+
+.contact-form input.valid {
+    border-color: green;
+}
+
+.contact-form input.invalid {
+    border-color: red;
+}
+
+.footer_contact{
+    margin-top: -800;
+}
+
+/*  gallery */
+
+.ctr{
+    width: 1500px;
+    height: 900px;
+    display: flex;
+    margin-left: 0.5px;
+    margin-top: -20px;
+    margin-bottom: 100px;
+    gap: 10px;
+}
+.tab{
+    position: relative;
+    width: 20%;
+    height: 40%;
+    padding: rgb(150,150,150);
+    transition: width .7s ease;
+    border-radius: 25px ;
+
+}
+.tab img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.tab:hover{
+    width: 30%;
+}
+
+/*  style page reservation */
+
+
+.reservation-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservation-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group.full-width {
+    grid-template-columns: 1fr;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f87902;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: 1px solid #ff6f00;
+}
+
+/* Style pour les messages d'erreur */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

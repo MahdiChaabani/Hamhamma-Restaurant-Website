@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/logo_1.png" type="image/x-icon">
+	<link rel="stylesheet" href="Messtyles.css">
+    <title>Avis</title>
+    <style>
+        footer {
+            background-color: #1a0e0ea9;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 400px;
+        }
+        footer .social {
+            border-radius: 50%;
+        }
+        footer .social-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .feedback-form-container {
+            margin: 50px auto;
+            width: 60%;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .feedback-form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .feedback-form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .feedback-form-container input,
+        .feedback-form-container select,
+        .feedback-form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+        .feedback-form-container button {
+            background-color: #ef6d16;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+	  
+    <div class="banner">
+        <div class="navbar">
+            <img src="./images/logo_1.png" alt="logo" class="logo"> 
+            <div class="wavy">
+                <h3>
+                    <span class="span1" style="--i:1">h</span>
+                    <span class="span1" style="--i:2">a</span>
+                    <span class="span1" style="--i:3">m</span>
+                    <span class="span1" style="--i:4">h</span>
+                    <span class="span1" style="--i:5">a </span>
+                    <span class="span1" style="--i:6">m</span>
+                    <span class="span1" style="--i:7">a</span>
+                    <span class="span1" style="--i:11">.</span> 
+                    <span class="span1" style="--i:12">.</span>  
+                    <span class="span1" style="--i:13">.</span>  
+                </h3> 
+            </div>
+            <ul>
+				<li class="li"><a href="index.html">Accueil</a></li>
+                <li class="li"><a href="about.html">À propos</a></li>
+                <li class="li"><a href="menu.html">Menu</a></li>
+                <li class="li"><a href="contact_us_page.html">Contact</a></li>
+                <li class="li"><a href="Reservation_hamhamma.html">Réservation</a></li>
+                <li class="li"><a href="customer review.html">Avis</a></li>
+            </ul>
+        </div>
+
+        <div class="ctr">
+            <div class="tab"><img class="img2" src="./images/1.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="./images/2.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="./images/3.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="./images/4.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="./images/5.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="./images/6.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="./images/7.jpg" alt=""></div>
+            <div class="tab"><img class="img2" src="./images/8.jpg" alt=""></div> 
+        </div>
+    </div>
+
+    <!-- ... reste inchangé jusqu'à ici ... -->
+
+<!-- Formulaire d'avis client (sans champ ID client) -->
+<div class="feedback-form-container">
+    <h2>Laissez un Avis</h2>
+    <form action="Insert_Avis.php" method="POST">
+        <label for="item_id">Plat :</label>
+        <select id="item_id" name="item_id" required>
+            <option value="">Choisissez un plat</option>
+            <option value="22">Couscous Royal</option>
+            <option value="102">Loubia</option>
+            <option value="103">Mouloukhia</option>
+            <option value="104">Couscous</option>
+            <option value="105">Spagettin</option>
+            <option value="106">Brik</option>
+            <option value="107">Chakchouka</option>
+            <option value="108">Rouz jerbi</option>
+        </select>
+
+        <label for="rating">Note :</label>
+        <select id="rating" name="rating" required>
+            <option value="">Choisissez une note</option>
+            <option value="1">1 ★</option>
+            <option value="2">2 ★★</option>
+            <option value="3">3 ★★★</option>
+            <option value="4">4 ★★★★</option>
+            <option value="5">5 ★★★★★</option>
+        </select>
+
+        <label for="comnt">Commentaire :</label>
+        <textarea id="comnt" name="comnt" rows="4" placeholder="Votre avis ici..."></textarea>
+
+        <div style="text-align: center;">
+            <button type="submit">Envoyer</button>
+            <button type="reset" style="margin-left: 10px; background-color: #ccc; color: black;">Réinitialiser</button>
+        </div>
+    </form>
+</div>
+<!-- Section des Chefs ensuite -->
+<div class="container">
+    <h1>Reviews de Chefs</h1>
+
+    <div class="chef">
+        <img src="./images/g.jpg" alt="Chef 1">
+        <div class="chef-info">
+            <h2>Chef Ghaith Homrani</h2>
+            <p>Expert en cuisine française.</p>
+            <div class="stars">★★★★★</div>
+        </div>
+    </div>
+
+    <div class="chef">
+        <img src="./images/m.jpg" alt="Chef 2">
+        <div class="chef-info">
+            <h2>Chef Mahdi Chaabani</h2>
+            <p>Spécialiste en cuisine italienne.</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+    </div>
+
+    <div class="chef">
+        <img src="./images/z.jpg" alt="Chef 3">
+        <div class="chef-info">
+            <h2>Chef Mahdi Zneti</h2>
+            <p>Maître de la cuisine moyen-orientale.</p>
+            <div class="stars">★★★★☆</div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; Grp 6 : Mahdi Chaabani | Ghaith Homrani | Mehdi Znetti.</p>
+        <div class="social-icons">
+			<a href="#"><img class="social" src="./images/Facebook_Logo_2023.png" width="30px" height="30px" alt=""></a>
+			<a href="#"><img class="social" src="./images/twitterr.png" width="30px" height="30px" alt=""></a>
+			<a href="#"><img class="social" src="./images/instaaa.png" width="30px" height="30px" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
