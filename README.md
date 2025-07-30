@@ -1,5 +1,14 @@
 
   <h1>🍽️ Hamhamma Restaurant Management System</h1>
+  
+  <div style="display: flex;">
+    <img width="25%" heigth="50%" src="images/1wb.png">
+    <img width="25%" heigth="50%" src="images/2wb.png">
+    <img width="25%" heigth="50%" src="images/3wb.png">
+    <img width="25%" heigth="50%" src="images/4wb.png">
+    <img width="25%" heigth="50%" src="images/5wb.png">
+    <img width="25%" heigth="50%" src="images/6wb.png"> 
+  </div>
   <p><strong>Final Year Project (PFA)</strong></p>
   <p><strong>Academic Year:</strong> 2024–2025<br>
      <strong>Institution:</strong> ESEN Manouba (École Supérieure d'Économie Numérique)<br>
