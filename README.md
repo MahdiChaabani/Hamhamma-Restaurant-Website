@@ -1,6 +1,6 @@
 
   <h1>🍽️ Hamhamma Restaurant Management System</h1>
-  
+    <p><strong>Final Year Project (PFA)</strong></p>
   <div style="display: flex;">
     <img width="25%" heigth="50%" src="images/1wb.png">
     <img width="25%" heigth="50%" src="images/2wb.png">
@@ -9,7 +9,7 @@
     <img width="25%" heigth="50%" src="images/5wb.png">
     <img width="25%" heigth="50%" src="images/6wb.png"> 
   </div>
-  <p><strong>Final Year Project (PFA)</strong></p>
+
   <p><strong>Academic Year:</strong> 2024–2025<br>
      <strong>Institution:</strong> ESEN Manouba (École Supérieure d'Économie Numérique)<br>
      <strong>Program:</strong> Business Information System<br>
@@ -65,38 +65,7 @@
     </ul>
   </section>
 
-  <section>
-    <h2>📁 Project Structure</h2>
-    <pre>
-hamhamma-restaurant/
-├── HTML Files/
-│   ├── about.html
-│   ├── Admin.html
-│   ├── contact_us_page.html
-│   ├── customer-review0.2.html
-│   └── Reservation_hamhamma.html
-├── PHP Files/
-│   ├── Adminpage.php
-│   ├── ajouter_article.php
-│   ├── db.php
-│   ├── Get_Feedbacks.php
-│   ├── get_menu_items_rev.php
-│   ├── Insert_Avis0.2.php
-│   ├── Insert_Reservation.php
-│   ├── login.php
-│   ├── menu.php
-│   ├── oracle_log
-│   └── recherche_reservation.php
-├── JavaScript Files/
-│   ├── main.js
-│   └── script.js
-├── CSS Files/
-│   └── styles/
-├── images/
-└── README.md
-    </pre>
-  </section>
-
+  
   <section>
     <h2>📄 Key File Descriptions</h2>
     <h3>HTML Files</h3>
